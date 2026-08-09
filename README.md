@@ -1,6 +1,6 @@
 # Melissa
 
-> AI와 대화하며 하루를 돌아보면, 그 대화를 일기로 자동 정리해 주는 Android 앱
+### AI와 대화하며 하루를 돌아보면, 그 대화를 일기로 자동 정리해 주는 Android 앱
 
 일기를 쓰고 싶지만 시간과 귀찮음 때문에 못 쓰는 사람을 위해 만들었습니다.
 빈 화면에 글을 쓰는 대신 AI가 먼저 말을 걸고, 사용자는 답만 하면 됩니다.
@@ -8,15 +8,17 @@
 만들어져 달력에 저장됩니다.
 
 2024년 2학기 모바일프로그래밍 수업에서 4인 팀으로 진행한 프로젝트입니다.
+이 프로토타입은 이후 크로스플랫폼 앱으로 고도화되어 실제 배포까지
+이어졌습니다. 자세한 내용은 아래 [다음 이야기](#다음-이야기)에 있습니다.
 
 ## 화면
 
-| 달력 | 대화 | 일기 조회 |
+| 달력 | 대화 | 일기 (자동 생성) |
 | --- | --- | --- |
-| ![달력 화면](docs/screenshots/calendar.png) | ![대화 화면](docs/screenshots/chat.png) | ![일기 조회 화면](docs/screenshots/diary.png) |
+| ![달력 화면](docs/screenshots/calendar.png) | ![대화 화면](docs/screenshots/chat.png) | ![일기 화면](docs/screenshots/diary.png) |
 
 왼쪽부터 날짜별로 일기 제목이 표시되는 달력, AI가 먼저 질문을 건네는 대화
-화면, 대화를 요약해 만든 일기를 보여주는 조회 화면입니다.
+화면, 대화를 요약해 자동 생성된 일기 화면입니다.
 
 ## 주요 기능
 
@@ -118,8 +120,8 @@ SQLite 로컬 저장
 썼습니다. 참고할 Android 예제가 거의 없어 공식 API 명세와 실제 JSON 응답을
 직접 분석하며 구현했습니다.
 
-개발 환경도 지금과는 달랐습니다. GPT 서비스가 막 나오고 Cursor 같은 AI IDE
-도구가 활성화되기 전이라, 웹사이트에서 코드를 파일 하나하나 복사해 붙여 넣고
+개발 환경도 현재(2026. 8)와는 달랐습니다. GPT 서비스가 막 나오고 Cursor
+같은 AI IDE 도구가 활성화되기 전이라, 웹사이트에서 코드를 파일 하나하나 복사해 붙여 넣고
 동작하는지 직접 확인하는 과정을 반복하며 개발했습니다.
 
 ## 배우고 느낀 점
@@ -153,3 +155,4 @@ SQLite 로컬 저장
 
 - 고도화 프로젝트 저장소: https://github.com/orgs/team-Melissa/repositories
 - Google Play: https://play.google.com/store/apps/details?id=com.melissa.melissaFE
+- App Store: https://apps.apple.com/kr/app/melissa/id6741430491
